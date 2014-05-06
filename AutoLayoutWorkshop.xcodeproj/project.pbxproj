@@ -1,0 +1,585 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		B1B0D2131919A23500EA3BEC /* INTUDemoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B1B0D2121919A23500EA3BEC /* INTUDemoViewController.m */; };
+		B1C6BDC3191947C600EF2E2D /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B1C6BDC2191947C600EF2E2D /* Foundation.framework */; };
+		B1C6BDC5191947C600EF2E2D /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B1C6BDC4191947C600EF2E2D /* CoreGraphics.framework */; };
+		B1C6BDC7191947C600EF2E2D /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B1C6BDC6191947C600EF2E2D /* UIKit.framework */; };
+		B1C6BDCD191947C600EF2E2D /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = B1C6BDCB191947C600EF2E2D /* InfoPlist.strings */; };
+		B1C6BDCF191947C600EF2E2D /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = B1C6BDCE191947C600EF2E2D /* main.m */; };
+		B1C6BDD3191947C600EF2E2D /* INTUAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = B1C6BDD2191947C600EF2E2D /* INTUAppDelegate.m */; };
+		B1C6BDDC191947C600EF2E2D /* INTUFirstViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B1C6BDDB191947C600EF2E2D /* INTUFirstViewController.m */; };
+		B1C6BDE1191947C600EF2E2D /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B1C6BDE0191947C600EF2E2D /* Images.xcassets */; };
+		B1C6BDE8191947C700EF2E2D /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B1C6BDE7191947C700EF2E2D /* XCTest.framework */; };
+		B1C6BDE9191947C700EF2E2D /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B1C6BDC2191947C600EF2E2D /* Foundation.framework */; };
+		B1C6BDEA191947C700EF2E2D /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B1C6BDC6191947C600EF2E2D /* UIKit.framework */; };
+		B1C6BDF2191947C700EF2E2D /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = B1C6BDF0191947C700EF2E2D /* InfoPlist.strings */; };
+		B1C6BDF4191947C700EF2E2D /* AutoLayoutWorkshopTests.m in Sources */ = {isa = PBXBuildFile; fileRef = B1C6BDF3191947C700EF2E2D /* AutoLayoutWorkshopTests.m */; };
+		B1C6BDFF191948A000EF2E2D /* INTUTabBarViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B1C6BDFE191948A000EF2E2D /* INTUTabBarViewController.m */; };
+		B1C6BE0219194BCA00EF2E2D /* UIView+AutoLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = B1C6BE0119194BCA00EF2E2D /* UIView+AutoLayout.m */; };
+		B1C6BE0919194DCB00EF2E2D /* INTUFirstView.m in Sources */ = {isa = PBXBuildFile; fileRef = B1C6BE0819194DCB00EF2E2D /* INTUFirstView.m */; };
+		B1C6BE0B19194E1300EF2E2D /* INTUFirstViewIB.xib in Resources */ = {isa = PBXBuildFile; fileRef = B1C6BE0A19194E1300EF2E2D /* INTUFirstViewIB.xib */; };
+		B1C6BE0E191955A100EF2E2D /* INTUFirstViewIB.m in Sources */ = {isa = PBXBuildFile; fileRef = B1C6BE0D191955A100EF2E2D /* INTUFirstViewIB.m */; };
+		B1C6BE131919591100EF2E2D /* INTUSecondViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B1C6BE121919591100EF2E2D /* INTUSecondViewController.m */; };
+		B1C6BE161919596800EF2E2D /* INTUSecondView.m in Sources */ = {isa = PBXBuildFile; fileRef = B1C6BE151919596800EF2E2D /* INTUSecondView.m */; };
+		B1C6BE1B191959F900EF2E2D /* INTUSecondViewIB.m in Sources */ = {isa = PBXBuildFile; fileRef = B1C6BE19191959F900EF2E2D /* INTUSecondViewIB.m */; };
+		B1C6BE1C191959F900EF2E2D /* INTUSecondViewIB.xib in Resources */ = {isa = PBXBuildFile; fileRef = B1C6BE1A191959F900EF2E2D /* INTUSecondViewIB.xib */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		B1C6BDEB191947C700EF2E2D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B1C6BDB7191947C600EF2E2D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B1C6BDBE191947C600EF2E2D;
+			remoteInfo = AutoLayoutWorkshop;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		B1B0D2111919A23500EA3BEC /* INTUDemoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = INTUDemoViewController.h; sourceTree = "<group>"; };
+		B1B0D2121919A23500EA3BEC /* INTUDemoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = INTUDemoViewController.m; sourceTree = "<group>"; };
+		B1C6BDBF191947C600EF2E2D /* AutoLayoutWorkshop.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AutoLayoutWorkshop.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		B1C6BDC2191947C600EF2E2D /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		B1C6BDC4191947C600EF2E2D /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		B1C6BDC6191947C600EF2E2D /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		B1C6BDCA191947C600EF2E2D /* AutoLayoutWorkshop-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "AutoLayoutWorkshop-Info.plist"; sourceTree = "<group>"; };
+		B1C6BDCC191947C600EF2E2D /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		B1C6BDCE191947C600EF2E2D /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		B1C6BDD0191947C600EF2E2D /* AutoLayoutWorkshop-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "AutoLayoutWorkshop-Prefix.pch"; sourceTree = "<group>"; };
+		B1C6BDD1191947C600EF2E2D /* INTUAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = INTUAppDelegate.h; sourceTree = "<group>"; };
+		B1C6BDD2191947C600EF2E2D /* INTUAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = INTUAppDelegate.m; sourceTree = "<group>"; };
+		B1C6BDDA191947C600EF2E2D /* INTUFirstViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = INTUFirstViewController.h; sourceTree = "<group>"; };
+		B1C6BDDB191947C600EF2E2D /* INTUFirstViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = INTUFirstViewController.m; sourceTree = "<group>"; };
+		B1C6BDE0191947C600EF2E2D /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		B1C6BDE6191947C700EF2E2D /* AutoLayoutWorkshopTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AutoLayoutWorkshopTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		B1C6BDE7191947C700EF2E2D /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		B1C6BDEF191947C700EF2E2D /* AutoLayoutWorkshopTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "AutoLayoutWorkshopTests-Info.plist"; sourceTree = "<group>"; };
+		B1C6BDF1191947C700EF2E2D /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		B1C6BDF3191947C700EF2E2D /* AutoLayoutWorkshopTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AutoLayoutWorkshopTests.m; sourceTree = "<group>"; };
+		B1C6BDFD191948A000EF2E2D /* INTUTabBarViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = INTUTabBarViewController.h; sourceTree = "<group>"; };
+		B1C6BDFE191948A000EF2E2D /* INTUTabBarViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = INTUTabBarViewController.m; sourceTree = "<group>"; };
+		B1C6BE0019194BCA00EF2E2D /* UIView+AutoLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+AutoLayout.h"; sourceTree = "<group>"; };
+		B1C6BE0119194BCA00EF2E2D /* UIView+AutoLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+AutoLayout.m"; sourceTree = "<group>"; };
+		B1C6BE0719194DCB00EF2E2D /* INTUFirstView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = INTUFirstView.h; sourceTree = "<group>"; };
+		B1C6BE0819194DCB00EF2E2D /* INTUFirstView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = INTUFirstView.m; sourceTree = "<group>"; };
+		B1C6BE0A19194E1300EF2E2D /* INTUFirstViewIB.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = INTUFirstViewIB.xib; sourceTree = "<group>"; };
+		B1C6BE0C191955A100EF2E2D /* INTUFirstViewIB.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = INTUFirstViewIB.h; sourceTree = "<group>"; };
+		B1C6BE0D191955A100EF2E2D /* INTUFirstViewIB.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = INTUFirstViewIB.m; sourceTree = "<group>"; };
+		B1C6BE111919591100EF2E2D /* INTUSecondViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = INTUSecondViewController.h; sourceTree = "<group>"; };
+		B1C6BE121919591100EF2E2D /* INTUSecondViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = INTUSecondViewController.m; sourceTree = "<group>"; };
+		B1C6BE141919596800EF2E2D /* INTUSecondView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = INTUSecondView.h; sourceTree = "<group>"; };
+		B1C6BE151919596800EF2E2D /* INTUSecondView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = INTUSecondView.m; sourceTree = "<group>"; };
+		B1C6BE18191959F800EF2E2D /* INTUSecondViewIB.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = INTUSecondViewIB.h; sourceTree = "<group>"; };
+		B1C6BE19191959F900EF2E2D /* INTUSecondViewIB.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = INTUSecondViewIB.m; sourceTree = "<group>"; };
+		B1C6BE1A191959F900EF2E2D /* INTUSecondViewIB.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = INTUSecondViewIB.xib; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		B1C6BDBC191947C600EF2E2D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B1C6BDC5191947C600EF2E2D /* CoreGraphics.framework in Frameworks */,
+				B1C6BDC7191947C600EF2E2D /* UIKit.framework in Frameworks */,
+				B1C6BDC3191947C600EF2E2D /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B1C6BDE3191947C700EF2E2D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B1C6BDE8191947C700EF2E2D /* XCTest.framework in Frameworks */,
+				B1C6BDEA191947C700EF2E2D /* UIKit.framework in Frameworks */,
+				B1C6BDE9191947C700EF2E2D /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		B1B0D2141919A36200EA3BEC /* Demo Infrastructure */ = {
+			isa = PBXGroup;
+			children = (
+				B1C6BDD1191947C600EF2E2D /* INTUAppDelegate.h */,
+				B1C6BDD2191947C600EF2E2D /* INTUAppDelegate.m */,
+				B1C6BDFD191948A000EF2E2D /* INTUTabBarViewController.h */,
+				B1C6BDFE191948A000EF2E2D /* INTUTabBarViewController.m */,
+				B1B0D2111919A23500EA3BEC /* INTUDemoViewController.h */,
+				B1B0D2121919A23500EA3BEC /* INTUDemoViewController.m */,
+			);
+			name = "Demo Infrastructure";
+			sourceTree = "<group>";
+		};
+		B1C6BDB6191947C600EF2E2D = {
+			isa = PBXGroup;
+			children = (
+				B1C6BDC8191947C600EF2E2D /* AutoLayoutWorkshop */,
+				B1C6BDED191947C700EF2E2D /* AutoLayoutWorkshopTests */,
+				B1C6BDC1191947C600EF2E2D /* Frameworks */,
+				B1C6BDC0191947C600EF2E2D /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		B1C6BDC0191947C600EF2E2D /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				B1C6BDBF191947C600EF2E2D /* AutoLayoutWorkshop.app */,
+				B1C6BDE6191947C700EF2E2D /* AutoLayoutWorkshopTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		B1C6BDC1191947C600EF2E2D /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				B1C6BDC2191947C600EF2E2D /* Foundation.framework */,
+				B1C6BDC4191947C600EF2E2D /* CoreGraphics.framework */,
+				B1C6BDC6191947C600EF2E2D /* UIKit.framework */,
+				B1C6BDE7191947C700EF2E2D /* XCTest.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		B1C6BDC8191947C600EF2E2D /* AutoLayoutWorkshop */ = {
+			isa = PBXGroup;
+			children = (
+				B1C6BE0319194BD000EF2E2D /* UIView+AutoLayout */,
+				B1B0D2141919A36200EA3BEC /* Demo Infrastructure */,
+				B1C6BE0519194D9100EF2E2D /* First Demo */,
+				B1C6BE0619194DA700EF2E2D /* Second Demo */,
+				B1C6BDE0191947C600EF2E2D /* Images.xcassets */,
+				B1C6BDC9191947C600EF2E2D /* Supporting Files */,
+			);
+			path = AutoLayoutWorkshop;
+			sourceTree = "<group>";
+		};
+		B1C6BDC9191947C600EF2E2D /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				B1C6BDCA191947C600EF2E2D /* AutoLayoutWorkshop-Info.plist */,
+				B1C6BDCB191947C600EF2E2D /* InfoPlist.strings */,
+				B1C6BDCE191947C600EF2E2D /* main.m */,
+				B1C6BDD0191947C600EF2E2D /* AutoLayoutWorkshop-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		B1C6BDED191947C700EF2E2D /* AutoLayoutWorkshopTests */ = {
+			isa = PBXGroup;
+			children = (
+				B1C6BDF3191947C700EF2E2D /* AutoLayoutWorkshopTests.m */,
+				B1C6BDEE191947C700EF2E2D /* Supporting Files */,
+			);
+			path = AutoLayoutWorkshopTests;
+			sourceTree = "<group>";
+		};
+		B1C6BDEE191947C700EF2E2D /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				B1C6BDEF191947C700EF2E2D /* AutoLayoutWorkshopTests-Info.plist */,
+				B1C6BDF0191947C700EF2E2D /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		B1C6BE0319194BD000EF2E2D /* UIView+AutoLayout */ = {
+			isa = PBXGroup;
+			children = (
+				B1C6BE0019194BCA00EF2E2D /* UIView+AutoLayout.h */,
+				B1C6BE0119194BCA00EF2E2D /* UIView+AutoLayout.m */,
+			);
+			name = "UIView+AutoLayout";
+			path = ..;
+			sourceTree = "<group>";
+		};
+		B1C6BE0519194D9100EF2E2D /* First Demo */ = {
+			isa = PBXGroup;
+			children = (
+				B1C6BDDA191947C600EF2E2D /* INTUFirstViewController.h */,
+				B1C6BDDB191947C600EF2E2D /* INTUFirstViewController.m */,
+				B1C6BE0F1919566400EF2E2D /* Code */,
+				B1C6BE101919567400EF2E2D /* IB */,
+			);
+			name = "First Demo";
+			sourceTree = "<group>";
+		};
+		B1C6BE0619194DA700EF2E2D /* Second Demo */ = {
+			isa = PBXGroup;
+			children = (
+				B1C6BE111919591100EF2E2D /* INTUSecondViewController.h */,
+				B1C6BE121919591100EF2E2D /* INTUSecondViewController.m */,
+				B1C6BE171919599A00EF2E2D /* Code */,
+				B1C6BE1D191959FD00EF2E2D /* IB */,
+			);
+			name = "Second Demo";
+			sourceTree = "<group>";
+		};
+		B1C6BE0F1919566400EF2E2D /* Code */ = {
+			isa = PBXGroup;
+			children = (
+				B1C6BE0719194DCB00EF2E2D /* INTUFirstView.h */,
+				B1C6BE0819194DCB00EF2E2D /* INTUFirstView.m */,
+			);
+			name = Code;
+			sourceTree = "<group>";
+		};
+		B1C6BE101919567400EF2E2D /* IB */ = {
+			isa = PBXGroup;
+			children = (
+				B1C6BE0A19194E1300EF2E2D /* INTUFirstViewIB.xib */,
+				B1C6BE0C191955A100EF2E2D /* INTUFirstViewIB.h */,
+				B1C6BE0D191955A100EF2E2D /* INTUFirstViewIB.m */,
+			);
+			name = IB;
+			sourceTree = "<group>";
+		};
+		B1C6BE171919599A00EF2E2D /* Code */ = {
+			isa = PBXGroup;
+			children = (
+				B1C6BE141919596800EF2E2D /* INTUSecondView.h */,
+				B1C6BE151919596800EF2E2D /* INTUSecondView.m */,
+			);
+			name = Code;
+			sourceTree = "<group>";
+		};
+		B1C6BE1D191959FD00EF2E2D /* IB */ = {
+			isa = PBXGroup;
+			children = (
+				B1C6BE1A191959F900EF2E2D /* INTUSecondViewIB.xib */,
+				B1C6BE18191959F800EF2E2D /* INTUSecondViewIB.h */,
+				B1C6BE19191959F900EF2E2D /* INTUSecondViewIB.m */,
+			);
+			name = IB;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		B1C6BDBE191947C600EF2E2D /* AutoLayoutWorkshop */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B1C6BDF7191947C700EF2E2D /* Build configuration list for PBXNativeTarget "AutoLayoutWorkshop" */;
+			buildPhases = (
+				B1C6BDBB191947C600EF2E2D /* Sources */,
+				B1C6BDBC191947C600EF2E2D /* Frameworks */,
+				B1C6BDBD191947C600EF2E2D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = AutoLayoutWorkshop;
+			productName = AutoLayoutWorkshop;
+			productReference = B1C6BDBF191947C600EF2E2D /* AutoLayoutWorkshop.app */;
+			productType = "com.apple.product-type.application";
+		};
+		B1C6BDE5191947C700EF2E2D /* AutoLayoutWorkshopTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B1C6BDFA191947C700EF2E2D /* Build configuration list for PBXNativeTarget "AutoLayoutWorkshopTests" */;
+			buildPhases = (
+				B1C6BDE2191947C700EF2E2D /* Sources */,
+				B1C6BDE3191947C700EF2E2D /* Frameworks */,
+				B1C6BDE4191947C700EF2E2D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				B1C6BDEC191947C700EF2E2D /* PBXTargetDependency */,
+			);
+			name = AutoLayoutWorkshopTests;
+			productName = AutoLayoutWorkshopTests;
+			productReference = B1C6BDE6191947C700EF2E2D /* AutoLayoutWorkshopTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		B1C6BDB7191947C600EF2E2D /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = INTU;
+				LastUpgradeCheck = 0510;
+				ORGANIZATIONNAME = "Intuit Inc.";
+				TargetAttributes = {
+					B1C6BDE5191947C700EF2E2D = {
+						TestTargetID = B1C6BDBE191947C600EF2E2D;
+					};
+				};
+			};
+			buildConfigurationList = B1C6BDBA191947C600EF2E2D /* Build configuration list for PBXProject "AutoLayoutWorkshop" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = B1C6BDB6191947C600EF2E2D;
+			productRefGroup = B1C6BDC0191947C600EF2E2D /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				B1C6BDBE191947C600EF2E2D /* AutoLayoutWorkshop */,
+				B1C6BDE5191947C700EF2E2D /* AutoLayoutWorkshopTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		B1C6BDBD191947C600EF2E2D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B1C6BDE1191947C600EF2E2D /* Images.xcassets in Resources */,
+				B1C6BE0B19194E1300EF2E2D /* INTUFirstViewIB.xib in Resources */,
+				B1C6BDCD191947C600EF2E2D /* InfoPlist.strings in Resources */,
+				B1C6BE1C191959F900EF2E2D /* INTUSecondViewIB.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B1C6BDE4191947C700EF2E2D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B1C6BDF2191947C700EF2E2D /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		B1C6BDBB191947C600EF2E2D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B1C6BE131919591100EF2E2D /* INTUSecondViewController.m in Sources */,
+				B1C6BE1B191959F900EF2E2D /* INTUSecondViewIB.m in Sources */,
+				B1C6BE0219194BCA00EF2E2D /* UIView+AutoLayout.m in Sources */,
+				B1C6BE0E191955A100EF2E2D /* INTUFirstViewIB.m in Sources */,
+				B1C6BDDC191947C600EF2E2D /* INTUFirstViewController.m in Sources */,
+				B1C6BDD3191947C600EF2E2D /* INTUAppDelegate.m in Sources */,
+				B1C6BDCF191947C600EF2E2D /* main.m in Sources */,
+				B1C6BDFF191948A000EF2E2D /* INTUTabBarViewController.m in Sources */,
+				B1B0D2131919A23500EA3BEC /* INTUDemoViewController.m in Sources */,
+				B1C6BE0919194DCB00EF2E2D /* INTUFirstView.m in Sources */,
+				B1C6BE161919596800EF2E2D /* INTUSecondView.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B1C6BDE2191947C700EF2E2D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B1C6BDF4191947C700EF2E2D /* AutoLayoutWorkshopTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		B1C6BDEC191947C700EF2E2D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = B1C6BDBE191947C600EF2E2D /* AutoLayoutWorkshop */;
+			targetProxy = B1C6BDEB191947C700EF2E2D /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		B1C6BDCB191947C600EF2E2D /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B1C6BDCC191947C600EF2E2D /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		B1C6BDF0191947C700EF2E2D /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B1C6BDF1191947C700EF2E2D /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		B1C6BDF5191947C700EF2E2D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		B1C6BDF6191947C700EF2E2D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		B1C6BDF8191947C700EF2E2D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "AutoLayoutWorkshop/AutoLayoutWorkshop-Prefix.pch";
+				INFOPLIST_FILE = "AutoLayoutWorkshop/AutoLayoutWorkshop-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		B1C6BDF9191947C700EF2E2D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "AutoLayoutWorkshop/AutoLayoutWorkshop-Prefix.pch";
+				INFOPLIST_FILE = "AutoLayoutWorkshop/AutoLayoutWorkshop-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		B1C6BDFB191947C700EF2E2D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/AutoLayoutWorkshop.app/AutoLayoutWorkshop";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "AutoLayoutWorkshop/AutoLayoutWorkshop-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "AutoLayoutWorkshopTests/AutoLayoutWorkshopTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		B1C6BDFC191947C700EF2E2D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/AutoLayoutWorkshop.app/AutoLayoutWorkshop";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "AutoLayoutWorkshop/AutoLayoutWorkshop-Prefix.pch";
+				INFOPLIST_FILE = "AutoLayoutWorkshopTests/AutoLayoutWorkshopTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		B1C6BDBA191947C600EF2E2D /* Build configuration list for PBXProject "AutoLayoutWorkshop" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B1C6BDF5191947C700EF2E2D /* Debug */,
+				B1C6BDF6191947C700EF2E2D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B1C6BDF7191947C700EF2E2D /* Build configuration list for PBXNativeTarget "AutoLayoutWorkshop" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B1C6BDF8191947C700EF2E2D /* Debug */,
+				B1C6BDF9191947C700EF2E2D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B1C6BDFA191947C700EF2E2D /* Build configuration list for PBXNativeTarget "AutoLayoutWorkshopTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B1C6BDFB191947C700EF2E2D /* Debug */,
+				B1C6BDFC191947C700EF2E2D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = B1C6BDB7191947C600EF2E2D /* Project object */;
+}
