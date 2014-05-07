@@ -75,8 +75,37 @@
 
 - (void)setupConstraints
 {
-    /** TODO: ADD CONSTRAINTS HERE **/
+    /** SOLUTION BELOW **/
     
+    static const CGFloat kTopBottomEdge = 10.0;
+    static const CGFloat kLeftRightEdge = 20.0;
+    static const CGFloat kPadding = 15.0;
+    static const CGFloat kWidthMultiplier = 0.7;
+    
+    [self.nameLabel autoPinEdgeToSuperviewEdge:ALEdgeLeft withInset:kLeftRightEdge];
+    [self.nameLabel autoPinEdgeToSuperviewEdge:ALEdgeTop withInset:kTopBottomEdge relation:NSLayoutRelationGreaterThanOrEqual];
+    
+    [self.amountLabel autoPinEdge:ALEdgeLeft toEdge:ALEdgeRight ofView:self.nameLabel withOffset:kPadding relation:NSLayoutRelationGreaterThanOrEqual];
+    [self.amountLabel autoPinEdgeToSuperviewEdge:ALEdgeTop withInset:kTopBottomEdge];
+    [self.amountLabel autoPinEdgeToSuperviewEdge:ALEdgeRight withInset:kLeftRightEdge];
+    [self.amountLabel autoAlignAxis:ALAxisBaseline toSameAxisOfView:self.nameLabel];
+    [self.amountLabel setContentCompressionResistancePriority:UILayoutPriorityDefaultHigh + 1 forAxis:UILayoutConstraintAxisHorizontal];
+    [self.amountLabel autoMatchDimension:ALDimensionWidth toDimension:ALDimensionWidth ofView:self withMultiplier:kWidthMultiplier relation:NSLayoutRelationLessThanOrEqual];
+    
+    [self.redImageView autoPinEdgeToSuperviewEdge:ALEdgeLeft withInset:kLeftRightEdge];
+    [self.redImageView autoPinEdgeToSuperviewEdge:ALEdgeBottom withInset:kTopBottomEdge relation:NSLayoutRelationGreaterThanOrEqual];
+    [self.redImageView autoPinEdge:ALEdgeTop toEdge:ALEdgeBottom ofView:self.nameLabel withOffset:kPadding];
+    
+    [self.descriptionLabel autoPinEdge:ALEdgeLeft toEdge:ALEdgeRight ofView:self.redImageView withOffset:kPadding];
+    [self.descriptionLabel autoAlignAxis:ALAxisBaseline toSameAxisOfView:self.redImageView];
+    [self.descriptionLabel autoPinEdgeToSuperviewEdge:ALEdgeBottom withInset:kTopBottomEdge relation:NSLayoutRelationGreaterThanOrEqual];
+    
+    [self.dateLabel autoPinEdgeToSuperviewEdge:ALEdgeRight withInset:kLeftRightEdge];
+    [self.dateLabel autoAlignAxis:ALAxisBaseline toSameAxisOfView:self.descriptionLabel];
+    [self.dateLabel autoPinEdge:ALEdgeLeft toEdge:ALEdgeRight ofView:self.descriptionLabel withOffset:kPadding relation:NSLayoutRelationGreaterThanOrEqual];
+    [self.dateLabel setContentCompressionResistancePriority:UILayoutPriorityDefaultHigh + 1 forAxis:UILayoutConstraintAxisHorizontal];
+    [self.dateLabel autoMatchDimension:ALDimensionWidth toDimension:ALDimensionWidth ofView:self withMultiplier:kWidthMultiplier relation:NSLayoutRelationLessThanOrEqual];
+    [self.dateLabel autoPinEdgeToSuperviewEdge:ALEdgeBottom withInset:kTopBottomEdge relation:NSLayoutRelationGreaterThanOrEqual];
 }
 
 @end
