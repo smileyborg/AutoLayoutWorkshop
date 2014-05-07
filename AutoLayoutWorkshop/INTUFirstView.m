@@ -99,6 +99,7 @@
     [self.descriptionLabel autoPinEdge:ALEdgeLeft toEdge:ALEdgeRight ofView:self.redImageView withOffset:kPadding];
     [self.descriptionLabel autoAlignAxis:ALAxisBaseline toSameAxisOfView:self.redImageView];
     [self.descriptionLabel autoPinEdgeToSuperviewEdge:ALEdgeBottom withInset:kTopBottomEdge relation:NSLayoutRelationGreaterThanOrEqual];
+    [self.descriptionLabel autoMatchDimension:ALDimensionWidth toDimension:ALDimensionWidth ofView:self withMultiplier:kWidthMultiplier relation:NSLayoutRelationLessThanOrEqual];
     
     [self.dateLabel autoPinEdgeToSuperviewEdge:ALEdgeRight withInset:kLeftRightEdge];
     [self.dateLabel autoAlignAxis:ALAxisBaseline toSameAxisOfView:self.descriptionLabel];
