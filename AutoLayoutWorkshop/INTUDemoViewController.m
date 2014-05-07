@@ -19,7 +19,7 @@
 
 @implementation INTUDemoViewController
 
-- (void)setupSliders
+- (void)setupControls
 {
     UISlider *widthSlider = [UISlider newAutoLayoutView];
     widthSlider.minimumValue = 10.0f;
@@ -40,7 +40,7 @@
     heightSlider.value = (heightSlider.minimumValue + heightSlider.maximumValue) * 0.5;
     [heightSlider addTarget:self action:@selector(heightSliderChanged:) forControlEvents:UIControlEventValueChanged];
     [self.view addSubview:heightSlider];
-    [heightSlider autoPinEdge:ALEdgeTop toEdge:ALEdgeBottom ofView:widthSlider withOffset:10.0];
+    [heightSlider autoPinEdge:ALEdgeTop toEdge:ALEdgeBottom ofView:widthSlider withOffset:0.0];
     [heightSlider autoPinEdge:ALEdgeLeft toEdge:ALEdgeLeft ofView:widthSlider];
     [heightSlider autoPinEdge:ALEdgeRight toEdge:ALEdgeRight ofView:widthSlider];
     
@@ -48,6 +48,15 @@
     [self.view addSubview:self.heightLabel];
     [heightSlider autoPinEdge:ALEdgeLeft toEdge:ALEdgeRight ofView:self.heightLabel withOffset:10.0];
     [self.heightLabel autoAlignAxis:ALAxisHorizontal toSameAxisOfView:heightSlider];
+    
+    UIButton *sizeToFitButton = [UIButton newAutoLayoutView];
+    [sizeToFitButton setTitleColor:[UIColor blueColor] forState:UIControlStateNormal];
+    [sizeToFitButton setTitleColor:[UIColor lightGrayColor] forState:UIControlStateHighlighted];
+    [sizeToFitButton setTitle:@"Size to Fit" forState:UIControlStateNormal];
+    [sizeToFitButton addTarget:self action:@selector(sizeToFit:) forControlEvents:UIControlEventTouchUpInside];
+    [self.view addSubview:sizeToFitButton];
+    [sizeToFitButton autoPinEdge:ALEdgeRight toEdge:ALEdgeRight ofView:heightSlider];
+    [sizeToFitButton autoPinEdge:ALEdgeTop toEdge:ALEdgeBottom ofView:heightSlider];
 }
 
 - (void)widthSliderChanged:(UISlider *)sender
@@ -62,12 +71,25 @@
     self.heightLabel.text = [NSString stringWithFormat:@"H: %lu", (unsigned long)self.heightConstraint.constant];
 }
 
+- (void)sizeToFit:(UIButton *)sender
+{
+    [self.widthConstraint autoRemove];
+    [self.heightConstraint autoRemove];
+    CGSize fittingSize = [self.demoView systemLayoutSizeFittingSize:UILayoutFittingCompressedSize];
+    self.widthConstraint.constant = fittingSize.width;
+    self.heightConstraint.constant = fittingSize.height;
+    [self.demoView addConstraint:self.widthConstraint];
+    [self.demoView addConstraint:self.heightConstraint];
+    self.widthLabel.text = [NSString stringWithFormat:@"W: %lu", (unsigned long)self.widthConstraint.constant];
+    self.heightLabel.text = [NSString stringWithFormat:@"H: %lu", (unsigned long)self.heightConstraint.constant];
+}
+
 - (void)viewDidLoad
 {
     [super viewDidLoad];
     
-    [self setupSliders];
-	
+    [self setupControls];
+    
     self.view.backgroundColor = [UIColor whiteColor];
 }
 

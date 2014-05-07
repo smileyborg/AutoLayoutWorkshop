@@ -51,6 +51,16 @@
     [super updateConstraints];
     
     if (!self.didSetupConstraints) {
+        // These constraints simulate the intrinsic content size of the yellow view
+        [UIView autoSetPriority:UILayoutPriorityDefaultHigh forConstraints:^{
+            [self.yellowView autoSetDimension:ALDimensionWidth toSize:260.0 relation:NSLayoutRelationGreaterThanOrEqual];
+            [self.yellowView autoSetDimension:ALDimensionHeight toSize:130.0 relation:NSLayoutRelationGreaterThanOrEqual];
+        }];
+        [UIView autoSetPriority:UILayoutPriorityDefaultLow forConstraints:^{
+            [self.yellowView autoSetDimension:ALDimensionWidth toSize:260.0 relation:NSLayoutRelationLessThanOrEqual];
+            [self.yellowView autoSetDimension:ALDimensionHeight toSize:130.0 relation:NSLayoutRelationLessThanOrEqual];
+        }];
+        
         [self setupConstraints];
         
         self.didSetupConstraints = YES;

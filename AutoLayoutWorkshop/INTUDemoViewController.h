@@ -10,6 +10,8 @@
 
 @interface INTUDemoViewController : UIViewController
 
+@property (nonatomic, strong) UIView *demoView;
+
 @property (nonatomic, strong) NSLayoutConstraint *widthConstraint;
 @property (nonatomic, strong) NSLayoutConstraint *heightConstraint;
 

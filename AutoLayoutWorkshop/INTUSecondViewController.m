@@ -11,8 +11,6 @@
 
 @interface INTUSecondViewController ()
 
-@property (nonatomic, strong) UIView *secondView;
-
 @end
 
 @implementation INTUSecondViewController
@@ -25,11 +23,11 @@
 - (void)viewDidLoad
 {
     /** TODO: COMMENT OUT ONE OF THE BELOW LINES TO SWITCH BETWEEN CODE & NIB **/
-    self.secondView = [INTUSecondView newAutoLayoutView]; // load view from code (red)
-    self.secondView = [[[NSBundle mainBundle] loadNibNamed:@"INTUSecondViewIB" owner:nil options:nil] objectAtIndex:0]; // load view from nib (blue)
+    self.demoView = [INTUSecondView newAutoLayoutView]; // load view from code (red)
+    self.demoView = [[[NSBundle mainBundle] loadNibNamed:@"INTUSecondViewIB" owner:nil options:nil] objectAtIndex:0]; // load view from nib (blue)
     
     
-    [self.view addSubview:self.secondView];
+    [self.view addSubview:self.demoView];
     [self.view setNeedsUpdateConstraints]; // this fires up the Auto Layout engine
     
     [super viewDidLoad];
@@ -41,9 +39,9 @@
     
     if (!self.didSetupConstraints) {
         
-        self.widthConstraint = [self.secondView autoSetDimension:ALDimensionWidth toSize:300];
-        self.heightConstraint = [self.secondView autoSetDimension:ALDimensionHeight toSize:300];
-        [self.secondView autoCenterInSuperview];
+        self.widthConstraint = [self.demoView autoSetDimension:ALDimensionWidth toSize:300];
+        self.heightConstraint = [self.demoView autoSetDimension:ALDimensionHeight toSize:300];
+        [self.demoView autoCenterInSuperview];
         
         self.didSetupConstraints = YES;
     }
